@@ -13,6 +13,7 @@ typedef enum {
   NCChineseConverterDictTypezh2HK,
   NCChineseConverterDictTypezh2SG,
   NCChineseConverterDictTypezh2CN,
+  NCChineseConverterDictTypeTWAlias,
 } NCChineseConverterDictType;
 
 @interface NCChineseConverter : NSObject

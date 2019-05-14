@@ -12,7 +12,8 @@
 @implementation NSString (NCAddition)
 
 - (NSString *)chineseStringTW {
-  return [[NCChineseConverter sharedInstance] convert:self withDict:NCChineseConverterDictTypezh2TW];
+  NSString *twString = [[NCChineseConverter sharedInstance] convert:self withDict:NCChineseConverterDictTypezh2TW];
+  return [[NCChineseConverter sharedInstance] convert:twString withDict:NCChineseConverterDictTypeTWAlias];
 }
 
 - (NSString *)chineseStringHK {

@@ -54,6 +54,9 @@
     case NCChineseConverterDictTypezh2CN:
       dictTypeKey = @"zh2CN";
       break;
+    case NCChineseConverterDictTypeTWAlias:
+      dictTypeKey = @"TWAlias";
+      break;
     default:
       dictTypeKey = @"zh2TW";
       break;
@@ -95,12 +98,14 @@
                 [[NSMutableArray alloc] init], @"zh2HK",
                 [[NSMutableArray alloc] init], @"zh2SG",
                 [[NSMutableArray alloc] init], @"zh2CN",
+                [[NSMutableArray alloc] init], @"TWAlias",
                 nil];
   _dict = [[NSDictionary alloc] initWithObjectsAndKeys:
            [[NSMutableDictionary alloc] init], @"zh2TW",
            [[NSMutableDictionary alloc] init], @"zh2HK",
            [[NSMutableDictionary alloc] init], @"zh2SG",
            [[NSMutableDictionary alloc] init], @"zh2CN",
+           [[NSMutableDictionary alloc] init], @"TWAlias",
            nil];
   
   //
